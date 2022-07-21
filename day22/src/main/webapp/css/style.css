@@ -1,0 +1,282 @@
+/*--------------------------------------------------
+# 헤더
+--------------------------------------------------*/
+#header {position: fixed;width: 100%;height: 81px;background-color: #fff;border-bottom: 1px solid rgba(0,0,0,0.1);z-index: 5;}
+#header .inner {height: 100%;}
+#header .left .logo {display: flex;align-items: center;height: 100%;}
+#header .left .logo > a {display: flex;}
+#header .right {display: flex;align-items: center;}
+#header .right .menu-wrap {height: 100%;}
+#header .right .menu-wrap .menu {display: flex;height: 100%;}
+#header .right .menu-wrap .menu > li {display: flex;justify-content: center;width: 80px;height: 100%;margin: 0 10px;border-top: 2px solid transparent;border-bottom: 2px solid transparent;}
+
+#header .right .menu-wrap .menu > li > a {display: flex;align-items: center;height: 100%;color: #000;}
+#header .right .menu-wrap .menu > li > a:hover {text-decoration: underline;}
+#header .right .menu-wrap .menu > li > .nav-bg {position: absolute;top: 81px;left: 0;display: none;width: 100%;height: auto;background-color: #fff;}
+#header .right .menu-wrap .menu > li:nth-child(1) > .nav-bg {height: 335px;}
+#header .right .menu-wrap .menu > li:nth-child(2) > .nav-bg {height: 292px;}
+#header .right .menu-wrap .menu > li:nth-child(3) > .nav-bg {height: 464px;}
+#header .right .menu-wrap .menu > li:nth-child(4) > .nav-bg {height: 507px;}
+#header .right .menu-wrap .menu > li > .sub-menu {position: absolute;top: 81px;left: 50%;display: none;justify-content: center;width: 1176px;padding: 60px 0;transform: translateX(-50%);}
+#header .right .menu-wrap .menu > li > .sub-menu > li {width: 20%;text-align: center;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > a {position: relative;color: #000;font-size: 18px;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > a:hover {text-decoration: underline;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > a > .arrow-right {position: absolute;top: 2px;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > .sub-menu2 {margin-top: 17px;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > .sub-menu2 > li {margin-bottom: 19px;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > .sub-menu2 > li > a {color: #444;font-size: 14px;}
+#header .right .menu-wrap .menu > li > .sub-menu > li > .sub-menu2 > li > a:hover {text-decoration: underline;}
+#header .right .document-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  margin-left: 20px;
+  padding: 0 20px;
+  background-color: #fd9f28;
+  border: 1px solid #fd9f28;
+  border-radius: 22px;
+  color: #000;
+  font-size: 15px;
+}
+
+/*--------------------------------------------------
+# 메인 - 비주얼
+--------------------------------------------------*/
+
+button {
+  display: flex;
+  align-items: center;
+  font-family: 'GmarketSansBold';
+  font-size: 20px;
+  color: #e47b52;
+  background-color: #000000;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+  word-break: keep-all;
+}
+
+#visual {
+  height: 720px;
+  background-color: #fd9f28;
+}
+
+#visual .inner {
+  position: relative;
+}
+
+#visual .visual-bg {
+  display: flex;
+  height: 884px;
+  background: url('../img/visual.png') no-repeat center;
+  background-size: cover;
+}
+
+#visual .box {
+  position: absolute;
+  top: 173px;
+  left: 0;
+  flex-direction: column;
+}
+
+#visual .box .title {
+  line-height: 1.35;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+#visual .box .text {
+  margin: 20px 0;
+  font-size: 17px;
+  opacity: .7;
+}
+
+#visual .box .brand-campaign {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#visual .box .store {
+  display: flex;
+  margin-top: 56px;
+}
+
+#visual .box .store .play-store,
+#visual .box .store .apple-store {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 182px;
+  height: 56px;
+  margin-right: 10px;
+  padding-left: 29px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 12px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#visual .box .store .play-store::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 22px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  /* background: url('../img/icon.png');
+  background-position: -341px -292px; */
+}
+
+#visual .box .store .apple-store::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 31px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/icon.png');
+  background-position: -371px -292px;
+}
+
+/*--------------------------------------------------
+# 메인 - 모바일로 더 손쉬운 계좌개설, 간편한 이체
+--------------------------------------------------*/
+#account {display: flex;align-items: center;margin-top: 164px;margin-bottom: 34px;}
+#account .box > .account-cover {width: 473px;}
+
+/*--------------------------------------------------
+# 메인 - 우대조건 없이 합리적인 예금과 적금
+--------------------------------------------------*/
+#deposit-savings {display: flex;align-items: center;height: 750px;}
+#deposit-savings .box {display: flex;justify-content: flex-end;width: 50%;}
+#deposit-savings .box .info > .btn-wrap {display: flex;}
+#deposit-savings .box .info > .btn-wrap > .btn {display: flex;justify-content: center;align-items: center;width: 158px;height: 56px;background-color: #f6f6f6;border-radius: 10px;color: #333;font-size: 17px;}
+#deposit-savings .box .info > .btn-wrap > .deposit {margin-right: 6px;}
+#deposit-savings .box .info > .deposit-savings-sub-cover {width: 440px;margin-top: 56px;}
+#deposit-savings .box > .deposit-savings-cover {width: 409px;transform: translateX(100px);transition: .5s;opacity: 0;}
+#deposit-savings.on .box > .deposit-savings-cover {transform: translateX(0);opacity: 1;}
+
+/*--------------------------------------------------
+# 메인 - 함께 쓰고 같이 보는 모임통장
+--------------------------------------------------*/
+#together {display: flex;align-items: center;height: 750px;}
+#together .box > .together-cover {width: 459px;}
+
+/*--------------------------------------------------
+# 메인 - 함께 도전해서 재미있는 26주적금
+--------------------------------------------------*/
+#weeks {display: flex;align-items: center;height: 650px;}
+#weeks .box > .weeks-cover {width: 492px;}
+
+/*--------------------------------------------------
+# 메인 - 해외계좌송금과 WU빠른해외송금을 더 쉽고, 저렴하게
+--------------------------------------------------*/
+#overseas-account {display: flex;align-items: center;height: 750px;background: url('../img/home_map.png') no-repeat -12% 50%;}
+#overseas-account .box > .overseas-account-cover {width: 408px;transform: translateY(100px);transition: .5s;opacity: 0;}
+#overseas-account.on .box > .overseas-account-cover {transform: translateY(0);opacity: 1;}
+
+/*--------------------------------------------------
+# 메인 - 복잡한 서류 제출을 간편하게, 내가 원하는 시간에
+--------------------------------------------------*/
+#loans {position: relative;height: 930px;text-align: center;overflow: hidden;}
+#loans .loans-bg {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #559cde;z-index: -1;}
+#loans .loans-bg::after {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #333b58;transform: translateY(100%);transition: .5s 1s;opacity: 0;}
+#loans.on .loans-bg::after {transform: translateY(0);transition-delay: 1s;opacity: 1;}
+#loans .effect {position: relative;}
+#loans .effect .moon-wrap {position: absolute;top: 200px;right: 0;width: 112px;height: 112px;border-radius: 100%;}
+#loans .effect .moon-wrap .moon {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #ffdc00;border-radius: 100%;transition: .5s .7s;}
+#loans.on .effect .moon-wrap .moon {background-color: #fff;transition-delay: 1.3s;}
+#loans .effect .moon-wrap .moon-eraser {position: absolute;top: -112px;left: -112px;width: 100%;height: 100%;background-color: #333b58;border-radius: 100%;transition: .5s .7s;opacity: 0;}
+#loans.on .effect .moon-wrap .moon-eraser {transform: translate(90px, 90px);transition: .5s 1.3s;opacity: 1;}
+#loans .effect .star-wrap {position: absolute;top: 0;left: 0;width: 100%;height: 930px;transition: .5s .7s;opacity: 0;}
+#loans.on .effect .star-wrap {opacity: 1;}
+#loans .effect .star-wrap .star {position: absolute;top: 0;left: 0;width: 4px;height: 4px;background-color: #fff;border-radius: 100%;transition: .5s;opacity: 0;}
+#loans.on .effect .star-wrap .star {opacity: 1;}
+#loans .effect .star-wrap .star:nth-child(1) {top: 30%;left: 0;animation: linear star 1s .5s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(2) {top: 10%;left: 10%;animation: linear star 1s .7s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(3) {top: 25%;left: 5%;animation: linear star 1s .2s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(4) {top: 40%;left: auto;right: 10%;animation: linear star 1s .4s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(5) {top: 43%;left: auto;right: 25%;animation: linear star 1s .6s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(6) {top: 73%;left: auto;right: 18%;animation: linear star 1s .1s infinite alternate-reverse;}
+#loans .effect .star-wrap .star:nth-child(7) {top: 65%;left: 15%;animation: linear star 1s .3s infinite alternate-reverse;}
+#loans .info {display: flex;flex-direction: column;align-items: center;}
+#loans .info .title {line-height: 1.3;padding-top: 160px;color: #fff;font-size: 42px;font-weight: bold;z-index: 1;}
+#loans .info .text {line-height: 1.6;margin: 24px 0;color: #fff;opacity: 60%;}
+#loans .info .btn-wrap {display: flex;justify-content: center;}
+#loans .info .btn-wrap .btn {display: flex;justify-content: center;align-items: center;width: 186px;height: 52px;margin-right: 6px;background-color: rgba(255,255,255,0.09);border-radius: 10px;color: #fff;font-size: 17px;z-index: 1;}
+#loans .info .btn-wrap .btn > .arrow-right {margin-top: 2px;transform: translateX(8px);}
+#loans .info .btn-wrap > .monthly-loan {margin: 0;}
+#loans .info .loans-cover {position: absolute;bottom: 0;left: 50%;width: 429px;height: 563px;transform: translateX(-50%);}
+@keyframes star {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
+}
+
+/*--------------------------------------------------
+# 메인 - 프렌즈 체크카드, 내가 고르는 선택의 즐거움
+--------------------------------------------------*/
+#check-card {display: flex;align-items: center;height: 1062px;text-align: center;}
+#check-card .info {display: flex;flex-direction: column;align-items: center;}
+#check-card .info > .title {line-height: 1.3;font-size: 42px;font-weight: bold;}
+#check-card .info > .text {line-height: 1.6;margin: 24px 0;color: #666;}
+#check-card .info > .friends-check-card {display: flex;justify-content: center;align-items: center;width: 258px;height: 56px;margin-bottom: 60px;background-color: #f6f6f6;border-radius: 10px;color: #333;font-size: 17px;}
+#check-card .info > .friends-check-card > .arrow-right {margin-top: 2px;transform: translateX(8px);}
+#check-card .slider {position: relative;}
+#check-card .slider .slide-vi {position: relative;width: 840px;}
+#check-card .slider .prev > img {position: absolute;top: 50%;left: 80px;width: 38px;height: 72px;transform: translateY(-50%);}
+#check-card .slider .next > img {position: absolute;top: 50%;right: 80px;width: 38px;height: 72px;transform: translateY(-50%);}
+
+/*--------------------------------------------------
+# 메인 - IT 기술로 카카오뱅크를 만들어 갑니다.
+--------------------------------------------------*/
+#makes {position: relative;background-color: #f9f9f9;text-align: center;}
+#makes .line {position: absolute;top: 588px;left: 0;width: 100%;height: 1px;background-color: #eee;}
+#makes .inner {position: relative;}
+#makes .title {position: relative;line-height: 1.3;padding: 160px 0 56px;font-size: 42px;font-weight: bold;}
+#makes .title::after {content: '';position: absolute;bottom: 0;left: 50%;width: 100px;height: 2px;background-color: #000;transform: translateX(-50%);}
+#makes .pic {position: relative;}
+#makes .pic > img {width: 1020px;margin: 140px auto 0;}
+#makes .info {display: flex;justify-content: space-between;width: 1020px;margin: 0 auto;}
+#makes .info .left {display: flex;}
+#makes .info .left .item,
+#makes .info .right .item {width: 256px;margin-bottom: 165px;}
+#makes .info .right .item {margin-right: 10px;}
+#makes .info .left .item .sub-title,
+#makes .info .right .item .sub-title {margin: 45px 0 17px;font-size: 20px;}
+#makes .info .left .item .sub-text,
+#makes .info .right .item .sub-text {line-height: 1.6;font-size: 15px;font-weight: 300;}
+
+/*--------------------------------------------------
+# 푸터
+--------------------------------------------------*/
+#footer {height: 164px;background-color: #eee;}
+#footer .inner {display: flex;flex-direction: column;justify-content: center;height: 100%;}
+#footer .top > li > a,
+#footer .middle > p {color: #666;font-size: 12px;}
+#footer .top > li {position: relative;}
+#footer .top > li::after {content: '';position: absolute;top: 10px;right: -26px;width: 1px;height: 9px;background-color: #d8d8d8;}
+#footer .top > li:nth-child(9)::after {display: none;}
+#footer .top > li:nth-child(n+3):nth-child(-n+5) > a {color: #000;font-weight: 500;}
+#footer .middle {display: flex;align-items: center;margin: 10px 0 20px;}
+#footer .middle > p {color: #000;font-weight: 500;}
+#footer .middle > p > span {margin: 0 19px 0 6px;color: #888;font-weight: normal;}
+#footer .middle > .copyright {color: #888;font-size: 10px;font-weight: normal;}
+#footer .bottom > .left > a {display: flex;align-items: center;color: #000;font-size: 13px;}
+#footer .bottom > .left > a::before {content: '';display: inline-block;width: 48px;height: 32px;margin-right: 5px;background: url('../img/webaccessibility.png') no-repeat center;background-size: cover;}
+#footer .bottom > .right {display: flex;align-items: center;}
+#footer .bottom > .right > li > a {display: flex;width: 24px;height: 24px;margin-right: 8px;background: url('../img/ico_sns.png') no-repeat;transform: translateX(6px);}
+#footer .bottom > .right > li:nth-child(1) > a {background-position: 0 -90px;}
+#footer .bottom > .right > li:nth-child(2) > a {background-position: -191px -138px;}
+#footer .bottom > .right > li:nth-child(3) > a {background-position: -89px -90px;}
+#footer .bottom > .right > li:nth-child(4) > a {background-position: -217px -138px;}
+#footer .bottom > .right > li:nth-child(5) > a {background-position: -30px -90px;}
+#footer .bottom > .right > li:nth-child(5) > a {margin: 0;}

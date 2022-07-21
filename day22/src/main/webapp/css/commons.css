@@ -1,0 +1,17 @@
+/*--------------------------------------------------
+# 전체
+--------------------------------------------------*/
+.inner {width: 1176px;margin: 0 auto;}
+.wrap {display: flex;flex-flow: row wrap;justify-content: space-between;}
+
+/*--------------------------------------------------
+# 메인
+--------------------------------------------------*/
+#main {padding-top: 81px;}
+#main .line {display: flex;width: 100%;height: 32px;background-color: #fafafa;}
+#main .box {display: flex;justify-content: center;width: 50%;}
+#main .box .info {display: flex;flex-direction: column;justify-content: center;height: 100%;}
+#main .box .info > .title {line-height: 1.3;font-size: 42px;font-weight: bold;}
+#main .box .info > .text {line-height: 1.6;margin: 24px 0;color: #666;}
+#main .box .info > .btn {display: flex;justify-content: center;align-items: center;width: 258px;height: 56px;background-color: #f6f6f6;border-radius: 10px;color: #333;font-size: 17px;}
+#main .box .info > .btn > .arrow-right {margin-top: 2px;transform: translateX(8px);}

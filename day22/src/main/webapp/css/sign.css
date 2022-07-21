@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input {
+  font-family: 'BMJUA';
+}
+
+.signin-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 개체의 너비, 높이에 대한 비율 */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.signin-container h2 {
+  font-size: 3.5rem;
+}
+
+.signin-form {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.signin-form input {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 3;
+  border: 0.5px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+#signin,
+input#signup {
+  padding-left: 0;
+  background: #f79320;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#signin:hover,
+input#signup:hover {
+  color: black;
+}
+
+.signup-container {
+  width: 100%;
+  text-align: center;
+  background: #f79320;
+}
+
+#signup {
+  display: block;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

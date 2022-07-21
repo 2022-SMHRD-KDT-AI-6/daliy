@@ -1,0 +1,9 @@
+/*--------------------------------------------------
+# 초기화
+--------------------------------------------------*/
+*, *::before, *::after {margin: 0;padding: 0;box-sizing: border-box;}
+body, input, textarea, button, select {font-family: 'Noto Sans KR', sans-serif, 나눔고딕, 돋움, Dotum, 굴림, Gulim, 'Apple SD Gothic Neo'!important;}
+button {background-color: transparent;border: 0;cursor: pointer;}
+img {display: block;width: 100%;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none;}

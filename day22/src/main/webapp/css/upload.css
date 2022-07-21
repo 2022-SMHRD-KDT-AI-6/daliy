@@ -1,0 +1,333 @@
+@font-face {
+  font-family: 'KOTRAHOPE';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "KOTRAHOPE";
+}
+
+.container {
+  grid-template-columns: 1fr;
+  display: grid;
+  min-height: 100vh;
+  margin: 10px;
+  border-style: solid;
+  border-color: #fd9f28;
+  border-width: 10px;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    /*500이상일때 첫번째 아이템이 첫번째 컬럼부터 세번째 컬럼까지(2칸)사용*/
+    place-items: center;
+    display: grid;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* textarea 공간 */
+.noresize {
+  resize: none; /* 사용자 임의 변경 불가 */
+  resize: both; /* 사용자 변경이 모두 가능 */
+  resize: horizontal; /* 좌우만 가능 */
+  resize: vertical; /* 상하만 가능 */
+}
+
+.box2 { 
+    grid-row: span 2;
+}
+
+/* 버튼 공통 스타일 */
+#abutton {
+  /* display: flex; */
+    /* align-items: center; */
+    font-family: 'KOTRAHOPE';
+    font-size: 50px;
+    color: #000000;
+    background-color: #fd9f28;
+    border-color: #000000;
+    border-radius: 30px;
+    padding: 40px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    place-items: center;
+    font-style: bold;
+    font-weight: 500;
+    border-width: 10px;
+}
+
+#abutton:hover {
+  /* display: flex; */
+    /* align-items: center; */
+    font-family: 'KOTRAHOPE';
+    font-size: 50px;
+    color: #fd9f28;
+    background-color: #000000;
+    border-color: #fd9f28;
+    border-radius: 30px;
+    padding: 40px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    place-items: center;
+    font-style: bold;
+    font-weight: 500;
+    border-width: 10px;
+}
+
+.document-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  margin-left: 20px;
+  padding: 0 20px;
+  background-color: #fd9f28;
+  border: 1px solid #fd9f28;
+  border-radius: 22px;
+  color: #000;
+  font-size: 15px;
+}
+
+
+.file{
+  text-align: center;
+  justify-items: center;
+}
+.upload{
+  margin: 10px;
+}
+
+/* 라디오버튼 스타일 시작 */
+.select {
+  padding: 0px 150px 0px 150px;
+}
+.select input[type=radio]{
+  display: none;
+}
+.select input[type=radio]+label{
+  display: inline-block;
+  cursor: pointer;
+  height: 90px;
+  width: 140px;
+  border: 5px solid rgb(0, 0, 0);
+  line-height: 24px;
+  text-align: center;
+  font-weight:bold;
+  font-size:40px;
+  margin: 1px;
+  padding: 25px;
+  place-items: center;
+  border-radius: 20px;
+}
+.select input[type=radio]+label{
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+.select input[type=radio]:checked+label{
+  background-color: #fd9f28;
+  color: #fff;
+}
+/* 라디오버트 스타일 끝 */
+
+/* 업로드 텍스트 */
+.uploadText{
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 업로드 텍스트 스타일 끝 */
+
+/* 텍스트에어리어 스타일 시작 */
+textarea {
+    margin: 20px;
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 5px #1E90FF;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: both;
+  }
+/* textarea 스타일 끝 */
+
+/* 콤보박스 시작 */
+.selectBox {
+  position: relative;
+  width: 250px;
+  height: 35px;
+  border: 2px solid black;
+}
+.selectBox .select {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 5px;
+  position: relative;
+  z-index: 3;
+  font-weight:bold;
+  font-size:20px;
+  
+}
+.selectBox .select option {
+  background: lightcoral;
+  color: #fff;
+  padding: 3px 0;
+  font-size: 16px;
+}
+.selectBox .icoArrow {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  z-index: 1; 
+  width: 35px; 
+  height: inherit;
+  border-left: 2px solid black;
+  display: flex;
+
+}
+
+.selectBox .icoArrow img {
+  width: 50%;
+  transition: .3s;
+}
+
+.selectBox .select:focus + .icoArrow img {
+  transform: rotate(180deg);
+}
+
+#uploadButton {
+width: 200px;
+height: 50px;
+padding: 10px;
+}
+
+
+/* 드래그드랍css시작 */
+/* .drag-area{
+  border: 2px dashed rgb(0, 0, 0);
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid rgb(0, 0, 0);
+}
+.drag-area .icon{
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+}
+.drag-area header{
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.drag-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin: 10px 0 15px 0;
+}
+.drag-area button{
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: rgb(0, 0, 0);
+  color: #ff8a53;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+} */
+
+/* 드래그드랍css끝 */
+
+
+/* 드래그드랍 */
+.dropbox {
+  width: clamp(0px, 100%, 512px);
+  margin: 32px auto;
+  text-align: center;
+  --bgColor: #fd9f28;
+  --hoverBg: #e2bc8b;
+  --text: rgb(0, 0, 0);
+}
+
+.dropLabel {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  cursor: pointer;
+  background-color: var(--bgColor);
+}
+.dropimg{
+  width: 490px;
+  height: 490px;
+}
+
+.indiv {
+  width: 100%;
+  height: 520px;
+  margin: 64px auto;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 128px;
+  background-color: var(--bgColor);
+  color: var(--text);
+  border-color: black;
+  border-style:dashed;
+  border-width: 10px;
+}
+
+@media (any-hover: hover){
+  .indiv:hover{
+    background-color: var(--hoverBg);
+  }
+}
+
+.dropLabel--hover{
+  background-color: var(--hoverBg);
+}
+
+.preview-title{
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: var(--bgColor);
+}
+
+.embed-img{
+  width: 100%;
+  height: 128px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 8px;
+}
