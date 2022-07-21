@@ -66,15 +66,15 @@ System.out.print(list.get(0).getExp_price());
     <div class="btnGroup">
     	<input id='go week'
     	type='button' class='chartBtn'
-    	onclick=window.location.href='http://localhost:8081/day/ChartsWeek.jsp?'
+    	onclick=window.location.href='http://localhost:8081/day22/ChartsWeek.jsp?'
     	value='지난 7일간 차트 보기'/>
     	<input id='go month'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/MonthListService?'
+	 	onclick=window.location.href='http://localhost:8081/day22/MonthListService?'
 	 	value='월별 차트 보기'/>
 	 	<input id='go main'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/index.jsp'
+	 	onclick=window.location.href='http://localhost:8081/day22/index.jsp'
 	 	value='메인으로 가기'/>
 	 	
     </div>

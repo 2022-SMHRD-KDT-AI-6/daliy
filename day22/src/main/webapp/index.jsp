@@ -38,7 +38,7 @@
         <%} else{ %>
          <nav class="menu-wrap">
           <ul class="menu">
-			<li><a href="http://localhost:8081/day/MonthListService?">차트보기</a></li>
+			<li><a href="http://localhost:8081/day22/MonthListService?">차트보기</a></li>
 			<!-- <li><a href="./enroll.jsp">자산등록</a></li> -->
 			<li><a href="logoutSer">로그아웃</a></li>
 		  </ul>
@@ -97,7 +97,7 @@
             <p class="text">당신의 가계부데이터<br>차트로 관리하면 편리하고 합리적입니다.</p>
             <div class="btn-wrap">
             <%if(dto!=null) {%>
-              <a href="http://localhost:8081/day/MonthListService?" class="btn deposit">차트보러가기<span class="material-icons arrow-right">chevron_right</span></a>
+              <a href="http://localhost:8081/day22/MonthListService?" class="btn deposit">차트보러가기<span class="material-icons arrow-right">chevron_right</span></a>
              <%} %>
             </div>
             <img src="img/main-savings-moneys.png" alt="핵심 설명" class="deposit-savings-sub-cover">
@@ -140,7 +140,7 @@
           <h2 class="title">영수증을 볼수있는<br>나만의 즐거움</h2>
           <p class="text">서비스를 이용해보세요</p>
           <%if(dto!=null) {%>
-          <a href="http://localhost:8081/day/Service?" class="btn friends-check-card">캘린더 보기<span class="material-icons arrow-right">chevron_right</span></a>
+          <a href="http://localhost:8081/day22/Service?" class="btn friends-check-card">캘린더 보기<span class="material-icons arrow-right">chevron_right</span></a>
         	<%} %>
         </div>
         <div class="slider">

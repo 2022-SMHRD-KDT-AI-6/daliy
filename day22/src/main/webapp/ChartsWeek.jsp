@@ -64,15 +64,15 @@ html {
 	 <div class="btnGroup">
 	 	<input id='go day' class='chartBtn'
 	 	type='button'
-	 	onclick=window.location.href='http://localhost:8081/day/DayListService?'
+	 	onclick=window.location.href='http://localhost:8081/day22/DayListService?'
 	 	value='오늘 차트 보기'/>
 	 	<input id='go month'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/MonthListService?'
+	 	onclick=window.location.href='http://localhost:8081/day22/MonthListService?'
 	 	value='월별 차트 보기'/>
 	 	<input id='go main'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/index.jsp'
+	 	onclick=window.location.href='http://localhost:8081/day22/index.jsp'
 	 	value='메인으로 가기'/>
 	 </div>
 	 

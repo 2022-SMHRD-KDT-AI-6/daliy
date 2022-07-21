@@ -80,15 +80,15 @@ int sum12 = (int)request.getAttribute("sum12");
     <div class="btnGroup">
         <input id='go day'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/DayListService?'
+	 	onclick=window.location.href='http://localhost:8081/day22/DayListService?'
 	 	value='오늘 차트 보기'/>
 	 	<input id='go week'
     	type='button' class='chartBtn'
-    	onclick=window.location.href='http://localhost:8081/day/ChartsWeek.jsp?'
+    	onclick=window.location.href='http://localhost:8081/day22/ChartsWeek.jsp?'
     	value='지난 7일간 차트 보기'/>
     	<input id='go main'
 	 	type='button' class='chartBtn'
-	 	onclick=window.location.href='http://localhost:8081/day/index.jsp'
+	 	onclick=window.location.href='http://localhost:8081/day22/index.jsp'
 	 	value='메인으로 가기'/>
     </div>
     
