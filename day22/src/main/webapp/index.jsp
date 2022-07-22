@@ -82,7 +82,7 @@
             
             <%if(dto!=null){%>
             <%	String id = dto.getId(); //이거  %>
-            <a href="http://127.0.0.1:5000/upload?id=<%=id%>" class="btn bank-account">데일리 영수증<span class="material-icons arrow-right">chevron_right</span></a>
+            <a href="http://172.30.1.59:5000/upload?id=<%=id%>" class="btn bank-account">데일리 영수증<span class="material-icons arrow-right">chevron_right</span></a>
             <%} %>
           </div>
         </div>

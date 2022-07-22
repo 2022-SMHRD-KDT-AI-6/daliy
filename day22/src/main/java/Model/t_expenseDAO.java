@@ -15,6 +15,7 @@ public class t_expenseDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	t_expenseDTO dto = null;
+	ChartDTO dto1 = null;
 	
 
 	// DB ���� �޼ҵ�
@@ -48,27 +49,29 @@ public class t_expenseDAO {
 	
 	
 	// �Ϸ� ���� �������� �޼ҵ�
-	public ArrayList<t_expenseDTO> bringDayPrice(String id) {
+	public ArrayList<ChartDTO> bringDayPrice(String id) {
 		
-		ArrayList<t_expenseDTO> list = new ArrayList<t_expenseDTO>();
+		ArrayList<ChartDTO> list = new ArrayList<ChartDTO>();
 		
 		db_conn();
 		
 		try {// sqp�� ���� ����(user_id=? ��)
-			String sql = "select * from t_expense where user_id=? and trim(exp_date)=to_char(sysdate)";
+			String sql = "select sum(exp_price), exp_category from t_expense where user_id=? and trim(exp_date)=to_char(sysdate) group by exp_category";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, id);
 			
 			rs = psmt.executeQuery();
 			
 			while(rs.next()) {
-				int price = rs.getInt("exp_price");
-				String category = rs.getString("exp_category");
-				String user_id = rs.getString("user_id");
+				int price = rs.getInt(1);
+				String category = rs.getString(2);
+				//String user_id = rs.getString("user_id");
 				
-				dto = new t_expenseDTO(price, category, user_id);
+				dto1 = new ChartDTO();
+				dto1.setSum(price);
+				dto1.setCate(category);
 				
-				list.add(dto);
+				list.add(dto1);
 			}
 			
 			

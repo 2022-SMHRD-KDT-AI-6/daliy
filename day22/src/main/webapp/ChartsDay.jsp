@@ -1,3 +1,4 @@
+<%@page import="Model.ChartDTO"%>
 <%@page import="Model.t_expenseDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
@@ -49,8 +50,8 @@ html {
 </head>
 <body>
 <%
-ArrayList<t_expenseDTO> list = (ArrayList<t_expenseDTO>)request.getAttribute("list");
-System.out.print(list.get(0).getExp_price());
+ArrayList<ChartDTO> list = (ArrayList<ChartDTO>)request.getAttribute("list");
+System.out.print(list.get(0).getSum());
 
 %>
 <div class="page">
@@ -90,7 +91,7 @@ System.out.print(list.get(0).getExp_price());
             type: 'category',
             data: [
             	<%for(int i = 0; i < list.size(); i ++){%>
-            	"<%=list.get(i).getExp_category()%>",
+            	"<%=list.get(i).getCate()%>",
             	<%}%>
             ]
         },
@@ -101,7 +102,7 @@ System.out.print(list.get(0).getExp_price());
             {
             data: [
             	<%for(int i = 0; i < list.size(); i++){%>
-            	parseInt(<%=list.get(i).getExp_price() %>),
+            	parseInt(<%=list.get(i).getSum() %>),
             	<%}%>
             ],
             type: 'bar'
