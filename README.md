@@ -74,3 +74,8 @@
 ```
 
 때문에 이후 개인적으로  aws 를 이용해 게시판을 구현하고자 합니다.
+
+
+플라스크 코드는 [f]를 참조하시면 됩니다.  
+[f]: https://github.com/yongseong-kim9/pyweb
+
