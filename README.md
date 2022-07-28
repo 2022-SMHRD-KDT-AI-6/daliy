@@ -76,7 +76,8 @@ OCR을 활용한 영수증데이터 차트시각화 웹서비스
 
 # 담당
 
-![Untitled](read%20me%20b16650e008174a53bf27930f8b94114d/Untitled.png)
+![image](https://user-images.githubusercontent.com/86054791/181439456-98f5a52a-137f-4c3f-964e-3d0ebf96dca3.png)
+
 
 # 웹페이지 구현
 
@@ -92,7 +93,8 @@ OCR을 활용한 영수증데이터 차트시각화 웹서비스
     - 메인페이지, 영수증페이지, 로그인페이지, 회원가입페이지, 차트페이지
 - 로그인한후 세션아이디를 메인페이지에 구현
 
-![Untitled](read%20me%20b16650e008174a53bf27930f8b94114d/Untitled%201.png)
+
+
 
 # 📌프로젝트 개요
 
@@ -133,12 +135,12 @@ OCR을 활용한 영수증데이터 차트시각화 웹서비스
 - 업로드 페이지 기획
 
 # 🛠오류 발생 및 해결 내역
+![image](https://user-images.githubusercontent.com/86054791/181439855-081a99ee-d0ef-4245-8c71-5aecfade7ce0.png)
+![image](https://user-images.githubusercontent.com/86054791/181439886-d6c3c411-be7b-4d4b-b654-974a4578d9cf.png)
+![image](https://user-images.githubusercontent.com/86054791/181439929-0e29ef39-e918-4bb7-9cf3-b7d987c6a159.png)
 
-![Untitled](read%20me%20b16650e008174a53bf27930f8b94114d/Untitled%202.png)
 
-![Untitled](read%20me%20b16650e008174a53bf27930f8b94114d/Untitled%203.png)
 
-![Untitled](read%20me%20b16650e008174a53bf27930f8b94114d/Untitled%204.png)
 
 # ✍️프로젝트 소감 및 향후 발전 방향
 
